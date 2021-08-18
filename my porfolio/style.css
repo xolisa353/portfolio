@@ -1,0 +1,286 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: white;
+    color:  black;
+    box-shadow: 0 0 10px white;
+}
+
+/* This is a home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(0, 0, 0, 0.5);
+    height: 840px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#home:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 5rem;
+    background: url('./images/xolisa2.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+.headings{
+    font-family:century;
+    font-size: 2rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.button{
+    padding: 10px 36px;
+    background-color: transparent;
+    border: 1px solid white;
+    transition: .4s ease;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+/* this the about section */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-shadow: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#picture{
+    display: flex;
+}
+
+#picture img{
+    width: 575px;
+    height: 400px;
+}
+
+#para{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+#para h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* This is education section */
+
+#education{
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    align-items: center;
+    padding: 20px;
+}
+
+#text{
+    flex-direction: column;
+    text-align: justify;
+    padding: 5px;
+    text-align:center;
+}
+
+.cert{
+    display: flex;
+    /* justify-content:space-around;    */
+    box-sizing: border-box;
+}
+
+.cert img{
+    width: 360px;
+    height: 240px;
+}
+
+/* This is work section */
+#work{
+    display: flex;
+    flex-direction: column;
+    padding:20px
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+
+/* contact section */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1474767821094-a8fe9d8c8fdd?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTA2Njk2NQ&ixlib=rb-1.2.1&q=85');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .blur {
+    background: rgba(255, 255, 255, 0.4);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .title {
+    font-size: 2.7rem;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info {
+    display: flex;
+  }
+  
+  ul {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  ul li {
+    list-style: none;
+    margin: 5px 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+    background: #2c8ec7;
+    border-radius: 50%;
+    margin-right: 15px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+  }
+  
+  .contact-section {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contact-section textarea {
+    grid-column: 1 / -1;
+    resize: none;
+    width: 100%;
+    height: 180px;
+  }
+  
+  .contact-section textarea,
+  .contact-section input[type=text],
+  .contact-section input[type=email] {
+    background: #383838;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+  }
+  
+  .contact-section input[type=submit] {
+    grid-column: 2 / -1;
+    width: 50%;
+    justify-self: end;
+    background: #2c8ec7;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .contact-info {
+      flex-direction: column;
+    }
+    
+    .contact-section {
+      margin-top: 30px;
+    }
+    
+  }
