@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<head>
+<title>project page</title>
+<meta charset="UTF-8">
+
+<style>
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color:lightskyblue;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px){
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    body{
+        background-color: lightgray;
+    }
+    
+    .rounded{
+        width: 300px;
+        margin: auto;
+    }
+    
+    .rounded img{
+             border-radius: 50%;
+
+    }
+
+body{
+    background-color: lightgray;
+}
+
+.headings{
+    font-family:century;
+    font-size: 4rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+body {
+      height: 100%;
+      width: 100%;
+      background-color: rgb(2,211, 248);
+      clip-path: polygon(100% 1%, 100% 49%,49% 99%,0 99% 0 0);
+      position: absolute;
+      z-index: -1;
+    }
+
+    
+h1{
+      color: blue;
+    }
+
+    /* project */
+
+
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+ 
+</style>
+</head>
+<body>
+    <div id="bg"></div>
+
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)"
+    class="closebtn"
+    onclick="closeNav()">&times;</a>
+  
+    <a href="home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Education.html">Education</a>
+    <a href="project.html">project</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+  
+  
+  <span style="font-size:30px;cursor:
+  pointer"onclick="openNav()">☰ Menu
+  </span>
+  
+  <script>
+  
+  function openNav() {
+   document.getElementById("mySidenav")
+   .style.width="250px";
+  }
+  
+  function closeNav() {
+   document.getElementById("mySidenav")
+   .style.width = "0";
+  }
+
+
+
+
+  </script> 
+<h1 class="headings">PROJECTS</h1>
+<div class="container">
+
+
+	<div class="gallery">
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="./images/Screenshot (4).png" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="./images/Screenshot (11).png" alt="sunset behind San Francisco city skyline">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="./images/Screenshot (14).png" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="./images/Screenshot (13).png" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="./images/Screenshot (8).png" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="./images/Screenshot (12).png" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+		</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

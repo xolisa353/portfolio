@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=UTF-8">
+    <title>Xolisa's portfolio</title>
+  <style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+    body{
+        background-color: lightgray;
+    }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px){
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.headings{
+    font-family:century;
+    font-size: 2rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+    
+    h1{
+      color: blue;
+    } 
+
+    body {
+      height: 100%;
+      width: 100%;
+      background-color: rgb(2,211, 248);
+      clip-path: polygon(100% 1%, 100% 49%,49% 99%,0 99% 0 0);
+      position: absolute;
+      z-index: -1;
+    }
+    
+    
+</style>
+<body>
+  <div id="bg"></div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)"
+  class="closebtn"
+  onclick="closeNav()">&times;</a>
+
+  <a href="home.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Education.html">Education</a>
+  <a href="project.html">Project</a>
+  <a href="Contact.html">Contact</a>
+
+</div>
+
+
+<span style="font-size:30px;cursor:
+pointer"onclick="openNav()">☰ Menu
+</span>
+
+<script>
+
+function openNav() {
+ document.getElementById("mySidenav")
+ .style.width="250px";
+}
+
+function closeNav() {
+ document.getElementById("mySidenav")
+ .style.width = "0";
+}
+</script> 
+<br>
+<center>
+
+<h1 class="headings">EDUCATION</h1>
+   
+<p> last school attended at
+  John Noah Seniour Secondary School <br>
+  Highest grade passed Grade 12 <br>
+  on 2018
+ 
+</p>
+<h1 class="headings">QUALIFICATION</h1>
+<img src="./images/certificate1.jpg" height="390" width="390">
+</center>
+
+
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <title>Xolisa's portfolio</title>
+  <style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color:lightskyblue;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px){
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+   body{
+        background-color: lightgray;
+   } 
+    
+   h1{
+      color: blue;
+    } 
+
+    body {
+      height: 100%;
+      width: 100%;
+      background-color: rgb(2,211, 248);
+      clip-path: polygon(100% 1%, 100% 49%,49% 99%,0 99% 0 0);
+      position: absolute;
+      z-index: -1;
+    }
+
+    .skills ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    color: #3525af;
+    position: relative;
+    text-align: center;
+}
+
+.title::before{
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 75px;
+    height: 3px;
+    background: #354633;
+}
+
+.skills .li_wrap{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .li_wrap{
+    background: #fff;
+}
+
+.skills .li_wrap .text{
+    margin-top: 5px;
+}
+
+.percent{
+    position: relative;
+    width: 30%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #9153c9;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-shadow: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#picture{
+    display: flex;
+}
+
+#picture img{
+    width: 575px;
+    height: 400px;
+}
+
+#para{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+#para h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+.headings{
+    font-family:century;
+    font-size: 2rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+
+    
+    
+</style>
+<body>
+    <div id="bg"></div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)"
+  class="closebtn"
+  onclick="closeNav()">&times;</a>
+
+  <a href="home.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Education.html">Education</a>
+  <a href="project.html">Project</a>
+  <a href="Contact.html">Contact</a>
+
+</div>
+
+
+<span style="font-size:30px;cursor:
+pointer"onclick="openNav()">☰ Menu
+</span>
+
+<script>
+
+function openNav() {
+ document.getElementById("mySidenav")
+ .style.width="250px";
+}
+
+function closeNav() {
+ document.getElementById("mySidenav")
+ .style.width = "0";
+}
+</script> 
+<br>
+<div class="about">
+    <h1 class="headings">ABOUT ME</h1>
+    <div id="picture">
+    <img src="./images/xolisa2.jpg" alt="my pictiure">
+    <div id="para">
+        <h2>XOLISA WILI</h2>
+        
+        <P>I'm 22years of age. I matriculated in 2018 in John Noah Senior Secondary School. <br>
+             I'm an ambitious individual who has learned and develop under the guidance of <br>
+              those are on top of their field and has arcquired those skills to become an expect. <br>
+               I value arcquired abilities as they are enhancer of self-awareness and self-capabilities, <br>
+                hence im excellence in working with others to archieve certain objectiive on time and with excellence. <br>
+                 As for now I'm a software developer I wasn't taught how to code,but how to believe that I can.
+
+        </P>
+       </div>
+    </div>
+    </div>
+    
+    <h1 class="headings">KEY SKILLS</h1>
+<div class="skills_wrap pb">
+          <ul>
+            <li>
+              <div class="li_wrap">
+          <div class="icon">
+             <i class="fab fa-html5"></i>
+              </div>
+              <div class="text">HTML</div>
+              <div class="percent">
+       <div style="width: 95%;"></div>
+      </div>
+      </div>
+      </li>
+           <li>
+      <div class="li_wrap">
+       <div class="icon">
+          <i class="fab fa-css3-alt"></i>
+                  </div>
+          <div class="text">CSS</div>
+              <div class="percent">
+                      <div style="width: 84%;"></div>
+                          </div>
+                              </div>
+                              </li>
+                                 <li>
+                                  <div class="li_wrap">
+                          <div class="icon">
+                           <i class="fab fa-js"></i>
+                           </div>
+                          <div class="text">JAVASCRIPT</div>
+                               <div class="percent">
+                          <div style="width: 45%;"></div>
+                           </div>
+                           <div class="li_wrap">
+                              <div class="icon">
+                               
+                               </div>
+                           <div class="text">Adobe XD</div>
+                               <div class="percent">
+                          <div style="width: 88%;"></div>
+                           </div>
+                           <div class="text">Figma</div>
+                               <div class="percent">
+                          <div style="width: 92%;"></div>
+                           </div>
+                             </div>
+                           </li>
+                            </ul>
+                              </div>
+                                </div>
+<br>
+    <h1 class="headings">INTREST & HOBBIES</h1>
+<h2>Music <br> Reading and Writing</h2>
+
+
+
+
+
+</body>
+</html>

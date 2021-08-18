@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta chartset="UTF-8">
+<title>portfolio cover</title>     
+</head>  
+<style>
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color:lightskyblue;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px){
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    footer{
+           display:flex;
+           justify-content:center;
+           padding:5px;
+           background-color:grey;
+           color:white;
+    }
+    body{
+        background-color: lightgray;
+    }
+    
+    .rounded{
+        width: 300px;
+        margin: auto;
+    }
+    
+    .rounded img{
+             border-radius: 50%;
+
+    }
+
+
+h1{
+      color: blue;
+    } 
+
+    .line-1 {
+  text-align: end;
+  padding-right: 2%;
+  color: blue;
+  padding-top: 1%;
+  position: relative;
+  top: 50%;  
+  width: 24em;
+  margin: 0 auto;
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+
+.anim-typewriter{
+animation: typewriter 4s steps(44) 1s 1 normal both,
+           blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter{
+from{width: 0;}
+to{width: 15em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(8, 8, 8, 0.75);}
+to{border-right-color: transparent;}
+}
+
+
+
+</style>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)"
+  class="closebtn"
+  onclick="closeNav()">&times;</a>
+
+  <a href="home.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Education.html">Education</a>
+  <a href="project.html">Project</a>
+  <a href="Contact.html">Contact</a>
+
+</div>
+
+
+<span style="font-size:30px;cursor:
+pointer"onclick="openNav()">☰ Menu
+</span>
+
+<script>
+
+function openNav() {
+ document.getElementById("mySidenav")
+ .style.width="250px";
+}
+
+function closeNav() {
+ document.getElementById("mySidenav")
+ .style.width = "0";
+}
+
+
+
+</script> 
+
+
+
+
+
+
+</style>
+<center>
+    <div id="body">
+        <p class="line-1 anim-typewriter">WELCOME TO</p>
+        <p class="line-1 anim-typewriter">MY PORTFOLIO</p>
+      </div>
+<div class="rounded">
+<img src="./images/wili.jpg" height="350" width="350">
+</div>
+
+<p><strong>MY NAME IS XOLISA WILI</strong></p>
+<br>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+ </body>
+ </html>
